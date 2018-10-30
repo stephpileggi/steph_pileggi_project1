@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h2 {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 ul, li {
@@ -109,6 +109,8 @@ header {
 	min-height: 100vh;
 }
 
+
+
 .headerNav .logo {
     font-family: 'Playfair Display', serif;
     font-weight: bold;
@@ -166,7 +168,8 @@ header a {
 .headerContent {
     text-align: center;
     margin: 0 auto;
-    margin-top: 50vh;
+    /* margin-top: 50vh; add media query with a lower vh */
+    
 }
 
 .headerContent h1 {
@@ -307,29 +310,38 @@ header a {
     background: #f0f5ff;
 }
 
-.natureArticleImage {
+ .natureArticleImage {
     background: url(../images/image-7@2x.png) no-repeat center center;
     -webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
     background-size: cover;
-    width: 100%;
+    /* position: absolute; */
+    width: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .candidArticleImage {
-    background: url(../images/image-8@2x.png) no-repeat center center;
+    background: url(../images/image-8@2x.png) no-repeat center bottom;
     -webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
     background-size: cover;
-    width: 100%;
-} 
-
-.natureArticleImage img,
-.candidArticleImage img {
-    width: 100%;
-    display: block;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    /* right: 0; */
+    bottom: 0;
 }
+    
+.natureArticleImage,
+.candidArticleImage {
+    width: 100%;
+    float: none;
+    min-height: 223px;
+} 
 
 .natureContent,
 .candidContent {
@@ -719,6 +731,7 @@ header a {
         width:100%;
         margin: 11px 0 0 0;
         box-sizing: border-box;
+        max-width: 100%;
     }
 
     #email {

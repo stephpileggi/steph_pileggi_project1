@@ -17,6 +17,16 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
     left: 0;
 }
 
+/* COLORS */
+
+/* accentColour: #e7a8e6 */
+/* blackShade: #1f2022 */
+/* black: #000 */
+/* black-two: #232323 */
+/* grey: #d8d8d8 */
+/* pale-grey: #f0f5ff; */
+/* white: #fcfcfc */
+
 /* COMMON STYLES */
 
 html {
@@ -163,7 +173,8 @@ header a {
 .headerContent {
     text-align: center;
     margin: 0 auto;
-    margin-top: 50vh;    
+    margin-top: 50vh; 
+    padding-bottom: 50px; 
 }
 
 .headerContent h1 {
@@ -298,7 +309,7 @@ header a {
     text-align: center;
 }
 
-/* nature article */
+/* nature article & candid article */
 .natureArticle,
 .candidArticle {
     background: #f0f5ff;
@@ -551,7 +562,6 @@ header a {
     text-align: center;
     float: left;
 }
-
 }
 
 @media(max-width: 1500px) {
@@ -559,7 +569,7 @@ header a {
     .lensArticle {
         max-width: 400px;
     }
-    
+
     .lensArticleImage {
         width: 100%;
         float: none;
@@ -585,19 +595,18 @@ header a {
         text-align: center;
         margin-top: 30px;
     }
-}
 
+    .lensBtn {
+        margin: 0 auto;
+    }
+}
 
 @media (max-width: 1167px) {
     .featuresSection li {
         display: inline-block;
         padding: 100px 20px;
-    }
-
-    
+    }    
 }
-
-
 
 @media(max-width: 1014px) {
     #sbsBtn {
@@ -606,6 +615,7 @@ header a {
         box-sizing: border-box;
         max-width: 100%;
         text-align: center;
+        transition: none;
     }
 
     #email {
@@ -754,9 +764,6 @@ header a {
         width: 50%;
         margin-top: 30px;
     }
-
-    
-
 }
 
 
